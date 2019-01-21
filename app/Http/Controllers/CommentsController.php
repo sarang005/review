@@ -51,7 +51,7 @@ class CommentsController extends Controller
         $comment->Comment=request('Comment');
         $comment->Email=request('Email');
         $comment->save();
-        
+
         return back();
        
     }
@@ -118,4 +118,9 @@ class CommentsController extends Controller
        
     //     return view('show', compact('comments'));
     // }
+
+    public function login()
+    {
+        
+    }
 }
